@@ -4,7 +4,8 @@ class Animal {
         this.name = name;
     }
 
-    action() {
+    action(x) {
+        x.stopPropagation();
         document.getElementById(this.actionSoundName).play();
     }
 
